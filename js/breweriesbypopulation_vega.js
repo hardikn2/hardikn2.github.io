@@ -10,7 +10,7 @@ var breweriesbypopulationSpec = {
 },
 "y": {
   "field": "Breweries", "type": "quantitative",
-  "axis": {"title": "# of Breweries"}
+  "axis": {"title": "Breweries by Population [Scaled to 1 million*]"}
 },
 "size": {"value": 10}
 }
