@@ -82,13 +82,13 @@ var usamapSpec = {
   ]
 }
 
-var opt2 = {
+var opt = {
 mode: "vega",
 actions: false
 };
 
 
-vega.embed('#usamap', usamapSpec, opt2, function(error, result) {
+vega.embed('#usamap', usamapSpec, opt, function(error, result) {
 // result.view is the Vega View, vlSpec is the original Vega-Lite specification
 var tooltipOption = {
 showAllFields: false,

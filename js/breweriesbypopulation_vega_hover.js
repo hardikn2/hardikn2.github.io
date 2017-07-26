@@ -1,12 +1,14 @@
 var breweriesbypopulationSpec = {
   "$schema": "https://vega.github.io/schema/vega/v3.0.json",
+  "width": 500,
+  "height": 300,
    "data": [
     {
       "name": "totalbreweriesbypopulation",
       "url": "data/totalbreweriesbypopulation.csv",
       "format": {"type": "csv", "parse": "auto"},
     }
-   ], 
+   ],
   "signals": [
     {
       "name": "tooltip",
