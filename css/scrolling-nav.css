@@ -78,6 +78,10 @@ of those sections to manage the look and feel of the site. */
   fill: yellow;
 }
 
+.slide-point {
+    font-weight: bold;
+}
+
 div.beerimage {
    content:url(https://theviralfeedarchive.files.wordpress.com/2014/11/beer_glasses.jpg);
    width: 40%;
@@ -86,7 +90,3 @@ div.beerimage {
    text-align: center;
    margin: auto;
 }​
-
-.slide-point {
-    font-weight: bold;
-}
