@@ -1,4 +1,4 @@
-    var yourVlSpec = {
+    var top10citiesSpec = {
   "$schema": "https://vega.github.io/schema/vega-lite/v2.json",
   "description": "Top 10 Cities",
   "data": { "url": "data/top10cities.csv"},
@@ -33,24 +33,24 @@ var opt2 = {
 };
 
 
-vega.embed('#top10citieschart', yourVlSpec, opt2, function(error, result) {
+vega.embed('#top10citieschart', top10citiesSpec, opt2, function(error, result) {
   // result.view is the Vega View, vlSpec is the original Vega-Lite specification
   var tooltipOption = {
     showAllFields: false,
     fields: [
       {
-        field: "Total",
-        title: "Total # of Breweries",
-        formatType : "number"
-      },
-      {
         field: "City",
         title: "City",
         formatType : "string"
+      },
+      {
+        field: "Total",
+        title: "Total # of Breweries",
+        formatType : "number"
       }
     ],
     delay: 50,
     colorTheme: "light"
   };
-  vegaTooltip.vegaLite(result.view, yourVlSpec,tooltipOption);
+  vegaTooltip.vegaLite(result.view, top10citiesSpec,tooltipOption);
   });

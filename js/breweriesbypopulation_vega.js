@@ -35,17 +35,17 @@ actions: false
 vega.embed('#breweriesbypopulationchart', breweriesbypopulationSpec, opt2, function(error, result) {
 // result.view is the Vega View, vlSpec is the original Vega-Lite specification
 var tooltipOption = {
-showAllFields: false,
+showAllFields: true,
 fields: [
   {
-    field: "Total",
-    title: "Total # of Breweries",
-    formatType : "number"
+    field: "StateName",
+    title: "State",
+    formatType : "string"
   },
   {
-    field: "City",
-    title: "City",
-    formatType : "string"
+    field: "Breweries",
+    title: "# of Breweries",
+    formatType : "number"
   }
 ],
 delay: 50,
