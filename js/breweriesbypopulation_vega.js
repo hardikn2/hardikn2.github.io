@@ -35,7 +35,7 @@ actions: false
 vega.embed('#breweriesbypopulationchart', breweriesbypopulationSpec, opt2, function(error, result) {
 // result.view is the Vega View, vlSpec is the original Vega-Lite specification
 var tooltipOption = {
-showAllFields: true,
+showAllFields: false,
 fields: [
   {
     field: "StateName",
