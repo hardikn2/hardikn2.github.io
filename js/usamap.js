@@ -74,7 +74,7 @@ var usamapSpec = {
         },
         "hover": {
           "fill": {"value": "#FF8000"},
-          "size": {"value": 80},
+          "size": {"value": 100},
           "strokeWidth": {"value": 3}
         }
       }

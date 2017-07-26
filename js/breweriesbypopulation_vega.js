@@ -13,7 +13,7 @@ var breweriesbypopulationSpec = {
   "axis": {"title": "Breweries by Population (1 million*)", "grid":false}
 },
 "color": { "value": "#FFCD5D"},
-"size": {"value": 10}
+"size": {"value": 15}
 }
 }
 
