@@ -1,6 +1,6 @@
 var breweriesbypopulationSpec = {
   "$schema": "https://vega.github.io/schema/vega/v3.0.json",
-  "width": 700,
+  "width": 900,
   "height": 300,
    "data": [
     {
@@ -39,7 +39,7 @@ var breweriesbypopulationSpec = {
 
   "axes": [
     { "orient": "bottom", "scale": "xscale", "title": "State" },
-    { "orient": "left", "scale": "yscale", "title": "Total # of Breweries" }
+    { "orient": "left", "scale": "yscale", "title": "Breweries by Population (1 million*)" }
   ],
 
   "marks": [
