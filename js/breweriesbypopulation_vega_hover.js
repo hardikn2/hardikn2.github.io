@@ -22,14 +22,14 @@ var breweriesbypopulationSpec = {
     {
       "name": "xscale",
       "type": "band",
-      "domain": {"data": "table", "field": "State"},
+      "domain": {"data": "totalbreweriesbypopulation", "field": "State"},
       "range": "width",
       "padding": 0.05,
       "round": true
     },
     {
       "name": "yscale",
-      "domain": {"data": "table", "field": "Breweries"},
+      "domain": {"data": "totalbreweriesbypopulation", "field": "Breweries"},
       "nice": true,
       "range": "height"
     }
@@ -43,7 +43,7 @@ var breweriesbypopulationSpec = {
   "marks": [
     {
       "type": "rect",
-      "from": {"data":"table"},
+      "from": {"data":"totalbreweriesbypopulation"},
       "encode": {
         "enter": {
           "x": {"scale": "xscale", "field": "State"},
