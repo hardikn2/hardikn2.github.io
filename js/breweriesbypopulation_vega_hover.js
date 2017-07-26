@@ -101,11 +101,6 @@ fields: [
     formatType : "string"
   },
   {
-    field: "City",
-    title: "City",
-    formatType : "string"
-  },
-  {
     field: "Breweries",
     title: "Total # of Breweries",
     formatType : "number"
