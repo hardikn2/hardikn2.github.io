@@ -1,4 +1,4 @@
-{
+var breweriesbypopulationSpec = {
   "$schema": "https://vega.github.io/schema/vega/v3.0.json",
    "data": [
     {
@@ -81,3 +81,36 @@
     }
   ]
 }
+
+var opt = {
+mode: "vega",
+actions: false
+};
+
+
+vega.embed('#breweriesbypopulationchart', breweriesbypopulationSpec, opt, function(error, result) {
+// result.view is the Vega View, vlSpec is the original Vega-Lite specification
+var tooltipOption = {
+showAllFields: false,
+fields: [
+  {
+    field: "StateName",
+    title: "State",
+    formatType : "string"
+  },
+  {
+    field: "City",
+    title: "City",
+    formatType : "string"
+  },
+  {
+    field: "Breweries",
+    title: "Total # of Breweries",
+    formatType : "number"
+  }
+],
+delay: 50,
+colorTheme: "light"
+};
+vegaTooltip.vegaLite(result.view, breweriesbypopulationSpec,tooltipOption);
+});
