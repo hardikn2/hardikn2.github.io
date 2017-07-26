@@ -6,34 +6,25 @@
   "encoding": {
     "x": {
       "field": "Total", "type": "quantitative",
-      "axis": {"title": "# of Breweries"}
+      "axis": {"title": "# of Breweries" , "grid":false}
     },
     "y": {
       "field": "City", "type": "nominal",
       "axis": {"title": "City"},
       "sort": {"field": "Total"}
     },
-    "size": {"value": 10}
+    "color": { "value": "#FFCD5D"},
+    "size": {"value": 10},
   }
 }
-
 
 var opt = {
-  "renderer": "canvas",
-  "actions": {
-    "export": false,
-    "source": false,
-    "editor": false
-  }
-}
-
-var opt2 = {
   mode: "vega-lite",
   actions: false
 };
 
 
-vega.embed('#top10citieschart', top10citiesSpec, opt2, function(error, result) {
+vega.embed('#top10citieschart', top10citiesSpec, opt, function(error, result) {
   // result.view is the Vega View, vlSpec is the original Vega-Lite specification
   var tooltipOption = {
     showAllFields: false,

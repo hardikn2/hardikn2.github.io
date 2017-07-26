@@ -58,15 +58,24 @@ var usamapSpec = {
       "from": {"data": "breweries"},
       "encode": {
         "enter": {
-          "size": {"value": 25},
-          "fill": {"value": "steelblue"},
+          "size": {"value": 30},
+          "fill": {"value": "#FFCD5D"},
           "fillOpacity": {"value": 0.8},
           "stroke": {"value": "white"},
-          "strokeWidth": {"value": 0.5}
+          "strokeWidth": {"value": 0.3}
         },
         "update": {
           "x": {"field": "x"},
-          "y": {"field": "y"}
+          "y": {"field": "y"},
+          "fill": {"value": "#FFCD5D"},
+          "fillOpacity": {"value": 0.8},
+          "size": {"value": 30},
+          "strokeWidth": {"value": 0.3}
+        },
+        "hover": {
+          "fill": {"value": "#FF8000"},
+          "size": {"value": 80},
+          "strokeWidth": {"value": 3}
         }
       }
     }

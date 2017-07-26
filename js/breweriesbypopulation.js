@@ -54,7 +54,7 @@ d3.csv("data/totalbreweriesbypopulation.csv", function(error, data) {
       .call(d3.axisLeft(y));
 
   svg.append("g")
-    .attr("transform", "translate(" + (width/2) + ", 15)")
+    .attr("transform", "translate(" + (width/2) + ", 20)")
     .append("text")
     .text("Breweries by state population");
 
