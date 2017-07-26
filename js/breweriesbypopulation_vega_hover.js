@@ -3,7 +3,7 @@ var breweriesbypopulationSpec = {
    "data": [
     {
       "name": "totalbreweriesbypopulation",
-      "url": "data/data/totalbreweriesbypopulation.csv",
+      "url": "data/totalbreweriesbypopulation.csv",
       "format": {"type": "csv", "parse": "auto"},
     }
    ], 
