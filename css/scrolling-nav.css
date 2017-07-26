@@ -77,3 +77,7 @@ of those sections to manage the look and feel of the site. */
 .bar {
   fill: yellow;
 }
+
+beerimage {
+   content:url(https://theviralfeedarchive.files.wordpress.com/2014/11/beer_glasses.jpg);
+}​
