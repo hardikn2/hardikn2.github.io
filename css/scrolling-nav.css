@@ -83,5 +83,6 @@ div.beerimage {
    width: 60%;
    height: 60%;
    padding-top: 100px;
-   text-align: center; 
+   text-align: center;
+   margin: auto;
 }​
