@@ -31,7 +31,7 @@ var breweriesbypopulationSpec = {
     },
     {
       "name": "yscale",
-      "domain": {"data": "totalbreweriesbypopulation", "field": "Breweries"},
+      "domain": {"data": "totalbreweriesbypopulation", "field": "TotalPerCapita"},
       "nice": true,
       "range": "height"
     }
@@ -50,7 +50,7 @@ var breweriesbypopulationSpec = {
         "enter": {
           "x": {"scale": "xscale", "field": "State"},
           "width": {"scale": "xscale", "band": 1},
-          "y": {"scale": "yscale", "field": "Breweries"},
+          "y": {"scale": "yscale", "field": "TotalPerCapita"},
           "y2": {"scale": "yscale", "value": 0},
           "fill": {"value": "#FFCD5D"}
         },
@@ -101,13 +101,18 @@ fields: [
     formatType : "string"
   },
   {
-    field: "Breweries",
+    field: "TotalPerCapita",
     title: "Breweries per 1,000,000 capita",
     formatType : "number"
   },
   {
     field: "Total",
     title: "Total # of Breweries",
+    formatType : "number"
+  },
+  {
+    field: "Population",
+    title: "State Population",
     formatType : "number"
   }
 ],
