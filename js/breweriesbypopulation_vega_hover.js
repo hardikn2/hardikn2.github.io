@@ -39,7 +39,7 @@ var breweriesbypopulationSpec = {
 
   "axes": [
     { "orient": "bottom", "scale": "xscale", "title": "State" },
-    { "orient": "left", "scale": "yscale", "title": "Breweries by Population (1 million*)" }
+    { "orient": "left", "scale": "yscale", "title": "Breweries per 1,000,000 capita" }
   ],
 
   "marks": [
@@ -102,6 +102,11 @@ fields: [
   },
   {
     field: "Breweries",
+    title: "Breweries per 1,000,000 capita",
+    formatType : "number"
+  },
+  {
+    field: "Total",
     title: "Total # of Breweries",
     formatType : "number"
   }
