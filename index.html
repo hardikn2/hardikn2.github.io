@@ -98,7 +98,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="slide-headings">Map</div>
+                    <div class="slide-headings">Distribution of breweries across USA</div>
                     <div id="usamap"></div>
                 </div>
             </div>
@@ -111,8 +111,7 @@
               <div class="row">
                   <div class="col-lg-12">
                     <div class="slide-headings">Breweries per Capita (1,000,000 people)</div>
-                    <p class="slide-text">If we further look deep into the data and consider state population as another perspective we can see that top states aren't the
-                      same as we noticed in the United States of America's geographical overview slide.</p>
+                    <p class="slide-text">California and New york are called beer paradice when it comes to total number of breweries. However, If we consider population of state vermont is the clearly a winner.</p>
                      <div id="breweriesbypopulationchart">
                   </div>
               </div>
@@ -125,7 +124,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                  <div class="slide-headings">Top 10 Cities</div>
+                  <div class="slide-headings">Which city can claim the title of America's craft beer capital?</div>
+                  <p class="slide-text">Most people would probably point their finger at Portland, Oregon. The city has gained a serious reputation among beer lovers with a mammoth 58 microbreweries in operation.
                   <div id="top10citieschart"></div>
                 </div>
             </div>
@@ -144,13 +144,14 @@
 
                     First slide is introductory slide and prepare user for visulization. Second slide gives overview of Breweries across united states. Third slide consider state population and shows number of breweries by 1 milion population by state to give user idea about where local brew and craft beers are more popular. Forth slide give different perspective to user by charting top 10 cities by total of number of breweries present in particular city.</br></br>
 
-                    Various slides use Axis name and tooltip for annotation and give user additional details.</br></br>
+                    Various slides use tooltip, change of color and size etc. for annotation and give user additional details.</br></br>
 
                     The name of the target slide is passed as an input paramter to the button when user click on navgiation bar items.</br></br>
 
                     The mouse click on navigation bar acts as a trigger event for navigation to different slides. Mouse scroll event take user to next or previous slide. The mouse hover (mouseover) event is a trigger for the tooltip in the bar chart.</br></br>
 
-                    The visulization is built using Vega-lite, D3 and bootstramp library. Dataset is obtained from www.kaggle.com  and provided by Datafiniti.</br></br>
+                    The visulization is built using Vega-lite, D3 and bootstramp library.</br>
+                    Dataset is obtained from www.kaggle.com  and provided by Datafiniti.Author discovered after some research that dataset has many inconsistency and is not reliable to draw full picture. Author did basic cleansing opeartion to make sure it doesn't become road blocker with project.</br></br>
 
                     </p>
 
