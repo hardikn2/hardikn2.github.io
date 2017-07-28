@@ -65,6 +65,13 @@ of those sections to manage the look and feel of the site. */
     background: #fff;
 }
 
+.contact-section {
+    height: 100%;
+    padding-top: 150px;
+    text-align: center;
+    background: #eee;
+}
+
 .slide-headings {
     text-align: center;
     font-size: 24px;
